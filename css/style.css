@@ -26,6 +26,10 @@ a {
   color: currentColor;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* ! UTILS */
 
 .container {
@@ -86,6 +90,41 @@ a {
 
 .playlist-section {
   flex-grow: 1;
+}
+
+.container .title {
+  color: white;
+  font-weight: bold;
+}
+
+.add-playlist {
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.plus-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 45px;
+  font-weight: 700;
+  background-color: #aaaaaa;
+  color: black;
+  text-align: center;
+}
+
+.playlist-section li {
+  padding: 10px 0;
+}
+
+.plus-btn:hover {
+  background-color: white;
+}
+
+.add-playlist span:hover,
+.playlist-section li:hover {
+  color: white;
 }
 
 /* DOWNLOAD and USER */
@@ -196,18 +235,12 @@ footer {
     color: white;
   }
 
-  /* PLAYLIST */
-
-  .playlist-section li:hover {
-    color: white;
-  }
-
   /* DOWNLOAD and USER */
 
   .download-user-section {
     align-items: flex-start;
     gap: 0;
-    padding: 8px 20px;
+    padding: 0 20px;
   }
 
   .download-app,
