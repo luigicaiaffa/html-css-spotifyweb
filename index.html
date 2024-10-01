@@ -8,6 +8,13 @@
     <!-- * FONT FAMILY * -->
 
     <!-- * FONT AWESOME * -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- * CUSTOM CSS * -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -19,8 +26,8 @@
       <div class="wrapper d-flex">
         <!-- # SIDEBAR -->
         <div class="sidebar d-flex">
-          <!-- *CONTAINER LOGO E NAV -->
-          <div class="container">
+          <!-- LOGO and NAV -->
+          <div class="logo-nav-container">
             <!-- logo large -->
             <img
               class="logo-img d-none d-sm-block"
@@ -67,26 +74,39 @@
             </nav>
           </div>
 
-          <!-- *CONTAINER PLAYLIST -->
-          <div class="container d-none d-sm-block">
-            <h2></h2>
-            <div></div>
-            <span></span>
+          <!-- PLAYLIST -->
+          <div class="container playlist-section d-none d-sm-block">
+            <h2>PLAYLIST</h2>
+
+            <!-- add playlist -->
+            <div>&plus;</div>
+            <span>Crea Playlist</span>
+
+            <!-- my playlists -->
             <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
             </ul>
           </div>
 
-          <!-- *CONTAINER USER -->
-          <div class="container">
-            <div><span class="d-none d-sm-inline"></span></div>
-            <div><span class="d-none d-sm-inline"></span></div>
+          <!-- DOWNLOAD and USER -->
+          <div class="container download-user-section d-flex">
+            <!-- download app -->
+            <div class="download-app d-sm-flex">
+              <img src="./img/download.svg" alt="download" />
+              <span class="d-none d-sm-inline">Installa app</span>
+            </div>
+
+            <!-- user profile -->
+            <div class="user-profile d-sm-flex">
+              <img src="./img/profile.svg" alt="user" />
+              <span class="d-none d-sm-inline">John Doe</span>
+            </div>
           </div>
         </div>
 

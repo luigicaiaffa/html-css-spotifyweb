@@ -29,7 +29,7 @@ a {
 /* ! UTILS */
 
 .container {
-  margin: 0 auto;
+  padding: 0 20px;
   max-width: 100%;
 }
 
@@ -60,20 +60,51 @@ a {
   height: calc(100vh - var(--footer-height));
   flex-direction: column;
   flex-shrink: 0;
-
-  /* debug */
-  background-color: lightblue;
-  border: 1px dashed black;
+  color: #aaaaaa;
+  background-color: #0f0f0f;
 }
 
-/* logo */
+/* LOGO and NAV */
+
+.logo-nav-container {
+  flex-grow: 1;
+}
+
 .logo-img {
   padding: 8px;
 }
 
-/* nav */
 .sidebar-nav {
   padding: 10px;
+}
+
+.sidebar-nav a:hover {
+  color: white;
+}
+
+/* PLAYLIST */
+
+.playlist-section {
+  flex-grow: 1;
+}
+
+/* DOWNLOAD and USER */
+
+.download-user-section {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 8px;
+}
+
+.download-app img {
+  width: 25px;
+}
+
+.user-profile img {
+  width: 30px;
+  background-color: #aaaaaa;
+  border-radius: 50%;
 }
 
 /* # MAIN CONTENT */
@@ -135,20 +166,64 @@ footer {
 
   /* # SIDEBAR */
 
-  /* nav */
+  /* LOGO and NAV */
+  .logo-nav-container {
+    flex-grow: 0;
+  }
+
+  .logo-img {
+    padding: 15px 20px 8px;
+    width: 80%;
+  }
+
   .sidebar-nav {
     padding: 20px 0;
   }
 
   .sidebar-nav a {
-    border-left: 4px solid green;
     display: flex;
     align-items: center;
     padding-left: 20px;
+    margin: 5px 0;
   }
 
   .sidebar-nav img {
-    width: 20%;
+    width: 16%;
+  }
+
+  .sidebar-nav a:hover {
+    border-left: 4px solid rgb(132, 212, 10);
+    color: white;
+  }
+
+  /* PLAYLIST */
+
+  .playlist-section li:hover {
+    color: white;
+  }
+
+  /* DOWNLOAD and USER */
+
+  .download-user-section {
+    align-items: flex-start;
+    gap: 0;
+    padding: 8px 20px;
+  }
+
+  .download-app,
+  .user-profile {
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0 8px;
+  }
+
+  .download-app {
+    border-bottom: 2px solid #aaaaaa;
+    width: 100%;
+  }
+
+  .download-app:hover {
+    color: white;
   }
 }
 
