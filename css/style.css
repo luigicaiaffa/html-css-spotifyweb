@@ -3,7 +3,7 @@
 :root {
   --footer-height: 130px;
   --sidebar-width: 60px;
-  --color-hover: #a2ef2e;
+  --color-hover: #5bff0e;
 }
 
 /* ! RESET */
@@ -70,7 +70,7 @@ body {
   overflow-y: auto;
 }
 
-/* LOGO and NAV */
+/* LOGO // NAV */
 
 .logo-nav-container {
   flex-grow: 1;
@@ -146,7 +146,7 @@ body {
   color: white;
 }
 
-/* DOWNLOAD and USER */
+/* DOWNLOAD // USER */
 
 .download-user-section {
   flex-direction: column;
@@ -197,6 +197,8 @@ footer {
   height: 100%;
   justify-content: space-between;
   align-items: center;
+  padding: 0 8px;
+  max-width: 100%;
 }
 
 .app-player > div {
@@ -204,26 +206,92 @@ footer {
   width: 33%;
 }
 
-/* progress bar // track utils */
-.progress-bar-container {
+/* TRACK PREVIEW */
+
+/* PROGRESS BAR // TRACK UTILS */
+.progress-track-container {
   flex-direction: column;
   color: white;
 }
 
-.progress-bar-container > div {
-  gap: 50px;
-  justify-content: center;
+.track-utils-container {
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .track-utils-icon.play-button {
-  font-size: 50px;
+  font-size: 35px;
 }
 
 .track-utils-icon {
-  font-size: 30px;
+  font-size: 20px;
   cursor: pointer;
   padding-bottom: 10px;
+}
+
+.progress-bar-container {
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.progress-bar-container > .progress-bar {
+  flex-grow: 1;
+  max-width: 500px;
+  min-width: 80px;
+  background-color: #979797;
+  height: 4px;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.progress-bar > .current-progress {
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+}
+
+.progress-bar-container:hover > .progress-bar > .current-progress,
+.utils-bar:hover > .progress-bar > .current-progress {
+  background-color: var(--color-hover);
+}
+
+.progress-bar-container:hover > .progress-bar > .current-progress::after,
+.utils-bar:hover > .progress-bar > .current-progress::after {
+  content: "";
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+/* UTILS // VOLUME */
+
+.utils-bar {
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.footer-icon {
+  padding-right: 10px;
+}
+
+.utils-bar > .progress-bar {
+  flex-grow: 1;
+  max-width: 170px;
+  min-width: 20px;
+  background-color: #979797;
+  height: 4px;
+  border-radius: 5px;
 }
 
 /* ! @MEDIA */
