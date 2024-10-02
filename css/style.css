@@ -211,6 +211,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+  margin-top: 20px;
 }
 
 .content-nav li {
@@ -240,6 +241,10 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 48%;
+}
+
+.artist-box img {
+  border-radius: 50%;
 }
 
 .track-box .track-title {
