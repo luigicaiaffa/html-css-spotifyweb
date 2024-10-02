@@ -27,8 +27,8 @@
   </head>
 
   <body>
+    <!-- ! MAIN -->
     <main>
-      <!-- ! MAIN // WRAPPER -->
       <div class="wrapper d-flex">
         <!-- # SIDEBAR -->
         <div class="sidebar d-flex">
@@ -161,8 +161,60 @@
       </div>
     </main>
 
+    <!-- ! FOOTER -->
     <footer>
-      <div class="footer-bar"></div>
+      <!-- #APP PLAYER -->
+      <div class="container app-player d-flex">
+        <!-- track preview -->
+        <div class="track-preview d-flex">
+          <img class="debug" src="./img/sinister.jpeg" alt="track-img" />
+          <div class="track-title">
+            Sinister
+            <span>Brano Nome</span>
+          </div>
+          <div class="footer-icon"><i class="fa-regular fa-heart"></i></div>
+          <div class="footer-icon"><i class="fa-regular fa-folder"></i></div>
+        </div>
+
+        <!-- progress bar // track utils -->
+        <div class="progress-bar-container d-flex">
+          <div class="d-flex">
+            <div class="track-utils-icon">
+              <i class="fa-solid fa-shuffle"></i>
+            </div>
+            <div class="track-utils-icon">
+              <i class="fa-solid fa-backward-step"></i>
+            </div>
+            <div class="track-utils-icon play-button">
+              <i class="fa-regular fa-circle-play"></i>
+            </div>
+            <div class="track-utils-icon">
+              <i class="fa-solid fa-forward-step"></i>
+            </div>
+            <div class="track-utils-icon">
+              <i class="fa-solid fa-rotate-right"></i>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <span class="current-time">0:25</span>
+            <div class="progress-bar">
+              <div class="current-progress"></div>
+            </div>
+            <span class="total-time">4:35</span>
+          </div>
+        </div>
+
+        <!-- utils bar -->
+        <div class="utils-bar d-flex">
+          <div class="footer-icon"><i class="fa-solid fa-list"></i></div>
+          <div class="footer-icon"><i class="fa-solid fa-display"></i></div>
+          <div class="volume-bar"><i class="fa-solid fa-volume-high"></i></div>
+          <div class="progress-bar">
+            <div class="current-progress"></div>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
