@@ -232,7 +232,7 @@ body {
 
 .section-title {
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 30px 0;
 }
 
@@ -248,7 +248,7 @@ body {
   padding: 15px 0;
 }
 
-.track-title .subtitle {
+.subtitle {
   font-size: 0.9rem;
   color: #979797;
 }
@@ -588,7 +588,7 @@ footer {
 
   /* TRACK BOX UTILS */
 
-  .track-box-container {
+  .track-box-container.recently-played {
     justify-content: space-between;
   }
 
