@@ -29,6 +29,7 @@ a {
 
 body {
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 
 /* ! UTILS */
@@ -66,7 +67,6 @@ body {
   flex-direction: column;
   flex-shrink: 0;
   color: #979797;
-  font-weight: 700;
   background-color: #0f0f0f;
   overflow-y: auto;
 }
@@ -182,7 +182,19 @@ body {
 .premium-upgrade {
   width: calc(100vw - var(--sidebar-width));
   height: 100px;
-  background-color: rgba(22, 26, 35, 0.45);
+  background-color: rgba(16, 20, 26, 0.45);
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.premium-upgrade button {
+  margin-right: 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-weight: 700;
 }
 
 /* PAGE CONTENT */
@@ -476,12 +488,8 @@ footer {
 
   /* UTILS // VOLUME */
 
-  .utils-bar > .footer-icon {
-    padding-right: 20px;
-  }
-
   .utils-bar > .progress-bar {
-    max-width: 180px;
+    max-width: 130px;
   }
 }
 
@@ -504,5 +512,17 @@ footer {
 
   .d-lg-flex {
     display: flex;
+  }
+
+  /* # APP PLAYER */
+
+  /* UTILS // VOLUME */
+
+  .utils-bar > .footer-icon {
+    padding-right: 20px;
+  }
+
+  .utils-bar > .progress-bar {
+    max-width: 160px;
   }
 }
