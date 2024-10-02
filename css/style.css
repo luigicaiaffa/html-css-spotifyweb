@@ -29,7 +29,6 @@ a {
 
 body {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
 }
 
 /* ! UTILS */
@@ -69,6 +68,7 @@ body {
   color: #979797;
   background-color: #0f0f0f;
   overflow-y: auto;
+  font-weight: 700;
 }
 
 /* LOGO // NAV */
@@ -175,6 +175,7 @@ body {
 
 .main-content {
   background-color: #141922;
+  font-weight: 700;
 }
 
 /* UPGRADE PREMIUM */
@@ -204,12 +205,60 @@ body {
   overflow-y: scroll;
 }
 
+/* content nav */
+.content-nav {
+  color: #979797;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.content-nav li {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+}
+
+.content-nav li:hover {
+  border-bottom: 2px solid var(--color-hover);
+}
+
+/* TRACK BOX UTILS */
+
+.track-box-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  color: white;
+  font-size: 2rem;
+  padding: 30px 0;
+}
+
+.track-box {
+  flex-direction: column;
+  align-items: center;
+  max-width: 48%;
+}
+
+.track-box .track-title {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 15px 0;
+}
+
+.track-title .subtitle {
+  font-size: 0.9rem;
+  color: #979797;
+}
+
 /* ! FOOTER */
 
 footer {
   height: var(--footer-height);
   background-color: #282828;
-
+  font-weight: 700;
   color: #979797;
 }
 
@@ -277,16 +326,16 @@ footer {
 }
 
 .track-utils-icon.play-button {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .track-utils-icon.play-button:hover {
-  font-size: 35px;
+  font-size: 40px;
   position: relative;
 }
 
 .track-utils-icon {
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
   padding-bottom: 10px;
 }
@@ -358,9 +407,9 @@ footer {
 
 /* ! @MEDIA */
 
-/* # 576 */
+/* # 600 */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 600px) {
   /* CUSTOM */
 
   :root {
@@ -456,9 +505,9 @@ footer {
   }
 }
 
-/* # 768 */
+/* # 920 */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   /* DISPLAY UTILS */
 
   .d-md-none {
@@ -491,11 +540,22 @@ footer {
   .utils-bar > .progress-bar {
     max-width: 130px;
   }
+
+  /* TRACK BOX UTILS */
+
+  .track-box-container {
+    justify-content: flex-start;
+  }
+
+  .track-box {
+    max-width: 22%;
+    margin-right: 15px;
+  }
 }
 
-/* # 992 */
+/* # 1080 */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1240px) {
   /* DISPLAY UTILS */
 
   .d-lg-none {
@@ -524,5 +584,16 @@ footer {
 
   .utils-bar > .progress-bar {
     max-width: 160px;
+  }
+
+  /* TRACK BOX UTILS */
+
+  .track-box-container {
+    justify-content: space-between;
+  }
+
+  .track-box {
+    max-width: 15%;
+    margin-right: 15px;
   }
 }
