@@ -1,7 +1,7 @@
 /* ! CUSTOM */
 
 :root {
-  --footer-height: 130px;
+  --footer-height: 120px;
   --sidebar-width: 60px;
   --color-hover: #5bff0e;
 }
@@ -66,6 +66,7 @@ body {
   flex-direction: column;
   flex-shrink: 0;
   color: #979797;
+  font-weight: 700;
   background-color: #0f0f0f;
   overflow-y: auto;
 }
@@ -102,7 +103,8 @@ body {
 
 .container .title {
   color: white;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
 .add-playlist {
@@ -165,21 +167,29 @@ body {
   border-radius: 50%;
 }
 
+.user-profile .user-name {
+  color: white;
+}
+
 /* # MAIN CONTENT */
 
 .main-content {
   background-color: #141922;
 }
 
-.content {
-  height: calc(100vh - var(--footer-height) - 100px);
-  overflow-y: scroll;
-}
+/* UPGRADE PREMIUM */
 
 .premium-upgrade {
   width: calc(100vw - var(--sidebar-width));
   height: 100px;
-  background-color: rgba(22, 26, 35, 1);
+  background-color: rgba(22, 26, 35, 0.45);
+}
+
+/* PAGE CONTENT */
+
+.content {
+  height: calc(100vh - var(--footer-height) - 100px);
+  overflow-y: scroll;
 }
 
 /* ! FOOTER */
@@ -197,7 +207,7 @@ footer {
   height: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8px;
+  padding: 0 10px;
   max-width: 100%;
 }
 
@@ -208,7 +218,42 @@ footer {
 
 /* TRACK PREVIEW */
 
+.track-preview {
+  align-items: center;
+  cursor: pointer;
+}
+
+.preview-img {
+  height: 50px;
+  width: 50px;
+  margin-right: 8px;
+}
+
+.track-title {
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.track-info > span {
+  font-size: 0.9rem;
+}
+
+.footer-icon-container {
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.footer-icon-container > .footer-icon {
+  padding: 3px 10px 3px;
+}
+
+.footer-icon-container > .footer-icon:hover {
+  color: white;
+}
+
 /* PROGRESS BAR // TRACK UTILS */
+
 .progress-track-container {
   flex-direction: column;
   color: white;
@@ -220,7 +265,12 @@ footer {
 }
 
 .track-utils-icon.play-button {
+  font-size: 30px;
+}
+
+.track-utils-icon.play-button:hover {
   font-size: 35px;
+  position: relative;
 }
 
 .track-utils-icon {
@@ -281,13 +331,13 @@ footer {
   color: white;
 }
 
-.footer-icon {
+.utils-bar > .footer-icon {
   padding-right: 10px;
 }
 
 .utils-bar > .progress-bar {
   flex-grow: 1;
-  max-width: 170px;
+  max-width: 100px;
   min-width: 20px;
   background-color: #979797;
   height: 4px;
@@ -296,15 +346,17 @@ footer {
 
 /* ! @MEDIA */
 
-/* # 576 PX */
+/* # 576 */
 
 @media screen and (min-width: 576px) {
   /* CUSTOM */
+
   :root {
     --sidebar-width: 250px;
   }
 
   /* DISPLAY UTILS */
+
   .d-sm-none {
     display: none;
   }
@@ -324,6 +376,7 @@ footer {
   /* # SIDEBAR */
 
   /* LOGO and NAV */
+
   .logo-nav-container {
     flex-grow: 0;
   }
@@ -376,12 +429,26 @@ footer {
   .download-app:hover {
     color: white;
   }
+
+  /* # APP PLAYER */
+
+  /* TRACK PREVIEW */
+
+  .preview-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .track-title {
+    font-size: 1rem;
+  }
 }
 
-/* # 768 PX */
+/* # 768 */
 
 @media screen and (min-width: 768px) {
   /* DISPLAY UTILS */
+
   .d-md-none {
     display: none;
   }
@@ -397,12 +464,32 @@ footer {
   .d-md-flex {
     display: flex;
   }
+
+  /* # APP PLAYER */
+
+  /* TRACK PREVIEW */
+
+  .footer-icon-container {
+    flex-direction: row;
+    padding-left: 20px;
+  }
+
+  /* UTILS // VOLUME */
+
+  .utils-bar > .footer-icon {
+    padding-right: 20px;
+  }
+
+  .utils-bar > .progress-bar {
+    max-width: 180px;
+  }
 }
 
-/* # 992 PX */
+/* # 992 */
 
 @media screen and (min-width: 992px) {
   /* DISPLAY UTILS */
+
   .d-lg-none {
     display: none;
   }
@@ -418,10 +505,4 @@ footer {
   .d-lg-flex {
     display: flex;
   }
-}
-
-.debug {
-  border: 1px dashed black;
-  height: 50px;
-  width: 50px;
 }
