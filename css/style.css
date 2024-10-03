@@ -124,6 +124,7 @@ body {
   height: 50px;
   background-color: #979797;
   text-align: center;
+  position: relative;
 }
 
 .add-playlist:hover {
@@ -136,9 +137,10 @@ body {
 
 .plus-btn i {
   color: black;
-  position: relative;
-  top: 18px;
-  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  font-size: 1.7rem;
+  transform: translate(-50%, 50%);
 }
 
 /* PLAYLIST LIST */
@@ -275,10 +277,15 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 48%;
+  cursor: pointer;
 }
 
-.artist-box img {
-  border-radius: 50%;
+.track-cover {
+  position: relative;
+}
+
+.track-img {
+  height: 100%;
 }
 
 .track-box .track-title {
@@ -290,6 +297,27 @@ body {
 .subtitle {
   font-size: 0.9rem;
   color: #979797;
+}
+
+.track-box:hover .track-cover-btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  position: absolute;
+}
+
+.track-box:hover .track-cover-btn i {
+  font-size: min(calc(10px + 5vw), 50px);
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.artist-box img {
+  border-radius: 50%;
 }
 
 /* * FOOTER * */
