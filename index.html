@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
@@ -27,28 +27,28 @@
   </head>
 
   <body>
-    <!-- ! MAIN -->
+    <!-- * MAIN * -->
     <main>
       <div class="wrapper d-flex">
-        <!-- # SIDEBAR -->
+        <!-- ! SIDEBAR -->
         <div class="sidebar d-flex">
-          <!-- LOGO // NAV -->
+          <!-- # LOGO // NAV -->
           <div class="logo-nav-container">
-            <!-- logo large -->
+            <!-- LOGO // large -->
             <img
               class="logo-img d-none d-sm-block"
               src="./img/logo.svg"
               alt="logo"
             />
 
-            <!--logo small -->
+            <!--LOGO // small -->
             <img
               class="logo-img d-sm-none"
               src="./img/logo-small.svg"
               alt="logo"
             />
 
-            <!-- nav -->
+            <!-- NAV -->
             <nav class="sidebar-nav">
               <ul>
                 <!-- home -->
@@ -101,17 +101,17 @@
             </nav>
           </div>
 
-          <!-- PLAYLIST -->
+          <!-- # PLAYLIST -->
           <div class="container playlist-section d-none d-sm-flex">
             <div class="title">PLAYLIST</div>
 
-            <!-- add playlist -->
+            <!-- ADD PLAYLIST -->
             <div class="add-playlist d-sm-flex">
               <div class="plus-btn"><i class="fa-solid fa-plus fa-lg"></i></div>
               Crea Playlist
             </div>
 
-            <!-- my playlists -->
+            <!-- PLAYLIST LIST -->
             <div class="playlist-list">
               <ul>
                 <li><a href="#">Nome Playlist</a></li>
@@ -126,9 +126,9 @@
             </div>
           </div>
 
-          <!-- DOWNLOAD // USER -->
+          <!-- # DOWNLOAD // USER -->
           <div class="container download-user-section d-flex">
-            <!-- download app -->
+            <!-- DOWNLOAD APP  -->
             <div class="download-app">
               <a class="d-sm-flex" href="#">
                 <svg viewBox="0 0 23 20" xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +143,7 @@
               </a>
             </div>
 
-            <!-- user profile -->
+            <!-- USER SECTION -->
             <div class="user-profile d-sm-flex">
               <img src="./img/profile.svg" alt="user" />
               <span class="user-name d-none d-sm-inline">John Doe</span>
@@ -151,15 +151,16 @@
           </div>
         </div>
 
-        <!-- # MAIN CONTENT -->
+        <!-- ! MAIN CONTENT -->
         <div class="main-content">
-          <!-- UPGRADE BAR -->
+          <!-- # UPGRADE PREMIUM -->
           <div class="premium-upgrade d-flex">
             <button>EFFETTUA L'UPGRADE</button>
           </div>
-          <!-- PAGE CONTENT -->
+
+          <!-- # PAGE CONTENT -->
           <div class="container content">
-            <!-- content nav -->
+            <!-- CONTENT NAV -->
             <div class="content-nav d-flex">
               <nav>
                 <ul>
@@ -173,70 +174,89 @@
               </nav>
             </div>
 
-            <!-- recently played -->
+            <!-- RECENTLY PLAYED -->
             <div class="section-title">Recently played</div>
+
+            <!-- TRACK BOX container -->
             <div class="track-box-container recently-played d-flex">
               <div class="track-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">
                   Heavy metal <br />
                   <span class="subtitle">Subtitle</span>
                 </div>
               </div>
+
               <div class="track-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">
                   Heavy metal <br />
                   <span class="subtitle">Subtitle</span>
                 </div>
               </div>
+
               <div class="track-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">
                   Heavy metal <br />
                   <span class="subtitle">Subtitle</span>
                 </div>
               </div>
+
               <div class="track-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">
                   Heavy metal <br />
                   <span class="subtitle">Subtitle</span>
                 </div>
               </div>
+
               <div class="track-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">
                   Heavy metal <br />
                   <span class="subtitle">Subtitle</span>
                 </div>
               </div>
+
               <div class="track-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">
                   Heavy metal <br />
                   <span class="subtitle">Subtitle</span>
@@ -244,31 +264,38 @@
               </div>
             </div>
 
-            <!-- create for you -->
+            <!-- CREATE FOR YOU -->
             <div class="section-title">
               Creato per John Doe <br />
               <span class="subtitle">
                 Più ascolti, più accurati saranno i suggerimenti
               </span>
             </div>
+
+            <!-- TRACK BOX container -->
             <div class="track-box-container create-for-you d-flex">
               <div class="track-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">
                   Heavy metal <br />
                   <span class="subtitle">Subtitle</span>
                 </div>
               </div>
+
               <div class="track-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">
                   Heavy metal <br />
                   <span class="subtitle">Subtitle</span>
@@ -276,28 +303,35 @@
               </div>
             </div>
 
-            <!-- most popular -->
+            <!-- MOST POPULAR -->
             <div class="section-title">
               Artisti più popolari <br />
               <span class="subtitle">
                 Più ascolti, più accurati saranno i suggerimenti
               </span>
             </div>
+
+            <!-- TRACK BOX container -->
             <div class="track-box-container most-popular d-flex">
               <div class="track-box artist-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">Heavy metal</div>
               </div>
+
               <div class="track-box artist-box d-flex">
+                <!-- track cover -->
                 <img
                   class="track-img"
                   src="./img/metal_lifting.jpg"
                   alt="album-cover"
                 />
+                <!-- track title -->
                 <div class="track-title">Heavy metal</div>
               </div>
             </div>
@@ -306,44 +340,50 @@
       </div>
     </main>
 
-    <!-- ! FOOTER -->
+    <!-- * FOOTER * -->
     <footer>
-      <!-- #APP PLAYER -->
+      <!-- ! APP PLAYER -->
       <div class="app-player d-flex">
-        <!-- TRACK PREVIEW -->
+        <!-- # TRACK PREVIEW -->
         <div class="track-preview d-flex">
+          <!-- TRACK COVER -->
           <img class="preview-img" src="./img/sinister.jpeg" alt="track-img" />
+
+          <!-- TRACK INFO -->
           <div class="track-info">
             <div class="track-title">Sinister</div>
             <span>Brano Nome</span>
           </div>
 
+          <!-- ICON -->
           <div class="footer-icon-container d-flex">
             <div class="footer-icon"><i class="fa-regular fa-heart"></i></div>
             <div class="footer-icon"><i class="fa-regular fa-folder"></i></div>
           </div>
         </div>
 
-        <!-- PROGRESS BAR // TRACK UTILS -->
+        <!-- # PROGRESS BAR // TRACK UTILS -->
         <div class="progress-track-container d-flex">
+          <!-- TRACK UTILS -->
           <div class="track-utils-container d-flex">
             <div class="track-utils-icon">
-              <i class="fa-solid fa-shuffle"></i>
+              <i class="fa-solid fa-shuffle fa-lg"></i>
             </div>
             <div class="track-utils-icon">
-              <i class="fa-solid fa-backward-step"></i>
+              <i class="fa-solid fa-backward-step fa-lg"></i>
             </div>
             <div class="track-utils-icon play-button">
-              <i class="fa-regular fa-circle-play"></i>
+              <i class="fa-regular fa-circle-play fa-2xl"></i>
             </div>
             <div class="track-utils-icon">
-              <i class="fa-solid fa-forward-step"></i>
+              <i class="fa-solid fa-forward-step fa-lg"></i>
             </div>
             <div class="track-utils-icon">
-              <i class="fa-solid fa-rotate-right"></i>
+              <i class="fa-solid fa-rotate-right fa-lg"></i>
             </div>
           </div>
 
+          <!-- PROGRESS BAR -->
           <div class="progress-bar-container d-flex">
             <span class="current-time">0:59</span>
             <div class="progress-bar">
@@ -353,10 +393,13 @@
           </div>
         </div>
 
-        <!-- UTILS // VOLUME -->
+        <!-- # UTILS // VOLUME -->
         <div class="utils-bar d-flex">
+          <!-- UTILS ICON -->
           <div class="footer-icon"><i class="fa-solid fa-list"></i></div>
           <div class="footer-icon"><i class="fa-solid fa-display"></i></div>
+
+          <!-- VOLUME BAR -->
           <div class="footer-icon"><i class="fa-solid fa-volume-high"></i></div>
           <div class="progress-bar">
             <div class="current-progress"></div>
