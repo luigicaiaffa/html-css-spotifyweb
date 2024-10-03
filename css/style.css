@@ -240,10 +240,22 @@ body {
   display: inline-block;
   padding: 5px;
   margin: 10px;
+  position: relative;
 }
 
 .content-nav li:hover {
-  border-bottom: 2px solid var(--color-hover);
+  color: white;
+}
+
+.content-nav li:hover::after {
+  content: "";
+  background-color: var(--color-hover);
+  height: 4px;
+  width: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 /* TRACK BOX UTILS */
@@ -331,7 +343,10 @@ footer {
   font-size: 0.8rem;
 }
 
-/* ICON */
+.track-info > span:hover {
+  text-decoration: underline;
+  color: white;
+}
 
 .footer-icon-container {
   flex-direction: column;
@@ -436,7 +451,7 @@ footer {
   border-radius: 5px;
 }
 
-/* ! @MEDIA */
+/* ! @MEDIA ! */
 
 /* # 734 # */
 
@@ -543,6 +558,10 @@ footer {
   .track-title {
     font-size: 1rem;
   }
+
+  .footer-icon-container > .footer-icon {
+    font-size: 18px;
+  }
 }
 
 /* # 930 # */
@@ -585,7 +604,7 @@ footer {
   /* ! APP PLAYER */
   /* # TRACK PREVIEW */
 
-  /* ICON */
+  /* TRACK INFO */
 
   .footer-icon-container {
     flex-direction: row;
